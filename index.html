@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabungan Aniv</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Tabung buat Aniv 2 Tahun ❤️</h1>
+  </header>
+  <main>
+    <section class="target-section">
+      <h2>Target Tabungan</h2>
+      <input type="number" id="targetInput" placeholder="contoh: 5000000">
+      <button onclick="saveTarget()">Simpan Target</button>
+      <div class="progress-bar">
+        <div id="progressFill"></div>
+      </div>
+      <p>Progress: <span id="progressText">0% (Rp 0 / Rp 0)</span></p>
+    </section>
+
+    <section class="input-section">
+      <h2>Tambah / Update Data</h2>
+      <input type="text" id="dateInput" placeholder="cth: November 1">
+      <input type="number" id="masInput" placeholder="Mas (Rp)">
+      <input type="number" id="adekInput" placeholder="Adek (Rp)">
+      <button onclick="addData()">Tambah / Update</button>
+    </section>
+
+    <section class="data-section">
+      <h2>Data Tabungan</h2>
+      <table id="tabunganTable">
+        <thead>
+          <tr><th>Bulan</th><th>Mas (Rp)</th><th>Adek (Rp)</th><th>Total (Rp)</th><th>Aksi</th></tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+
+    <section class="chart-section">
+      <h2>Grafik Progres Tabungan</h2>
+      <canvas id="tabunganChart"></canvas>
+    </section>
+
+    <div class="export-buttons">
+      <button onclick="exportExcel()">Export Excel</button>
+      <button onclick="exportPDF()">Export PDF</button>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
