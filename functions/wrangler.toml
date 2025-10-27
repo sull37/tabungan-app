@@ -1,0 +1,7 @@
+name = "tabungan-app"
+compatibility_date = "2025-10-27"
+
+[[d1_databases]]
+binding = "TABUNGAN_DB"
+database_id = "ID_DATABASE_D1_KAMU"  # Ganti dengan ID dari `npx wrangler d1 list`
+database_name = "TABUNGAN_DB"
