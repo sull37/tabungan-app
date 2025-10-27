@@ -2,12 +2,6 @@ name = "tabungan-app"
 compatibility_date = "2025-10-27"
 
 [[d1_databases]]
-binding = "tabungan_db"
-database_id = "name = "tabungan-app"
-compatibility_date = "2025-10-27"
-
-[[d1_databases]]
-binding = "tabungan_db"
-database_id = "ID_DATABASE_D1_KAMU"  # Ganti dengan ID dari `npx wrangler d1 list`
-database_name = "b28c06ec-26ae-426e-bc06-6a898ba558e6"  # Ganti dengan ID dari `npx wrangler d1 list`
-database_name = "tabungan_db"
+binding = "tabungan_db"  # Ganti ini
+database_id = "b28c06ec-26ae-426e-bc06-6a898ba558e6"  # Ganti dengan ID dari `npx wrangler d1 list`
+database_name = "tabungan_db"  # Ganti ini
